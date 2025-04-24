@@ -1,0 +1,13 @@
+  ~/.config/nvim                                                                                                             Size        Type         Last Modified               Created  
+    lua                                                                                                                         -   directory   2025-04-21 09:18 PM   2025-04-21 11:11 AM  
+   │  core                                                                                                                      -   directory   2025-04-24 03:09 PM   2025-04-21 09:18 PM  
+   │ │  keymaps.lua                                                                                                󰄱      2.86 KB         lua   2025-04-24 05:06 PM   2025-04-24 03:09 PM  
+   │ └  options.lua                                                                                                󰄱      3.81 KB         lua   2025-04-24 03:24 PM   2025-04-22 06:26 PM  
+   └  plugins                                                                                                                   -   directory   2025-04-24 05:10 PM   2025-04-21 11:11 AM  
+     │  bufferline.lua                                                                                                   2.08 KB         lua   2025-04-24 04:39 PM   2025-04-24 04:21 PM  
+     │  colortheme.lua                                                                                                     741 B         lua   2025-04-24 04:27 PM   2025-04-24 03:19 PM  
+     │  lualine.lua                                                                                                      2.13 KB         lua   2025-04-24 05:11 PM   2025-04-24 05:10 PM  
+     └  neotree.lua                                                                                                     16.74 KB         lua   2025-04-24 04:22 PM   2025-04-24 03:49 PM  
+    init.lua                                                                                                       󰄱        600 B         lua   2025-04-24 05:13 PM   2025-04-24 04:25 PM  
+    lazy-lock.json                                                                                                 󰄱        858 B        json   2025-04-24 04:27 PM   2025-04-21 09:18 PM  
+   * neo-tree filesystem [1]                                                                                              1.51 KB        file   2025-04-24 03:03 PM   2025-04-24 03:03 PM  

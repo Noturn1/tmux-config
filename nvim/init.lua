@@ -1,9 +1,9 @@
-require 'core.keymaps' require 'core.options'
+require 'core.keymaps' 
+require 'core.options'
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.signcolumn = "number"
-
+-- Clear global buftype 
+vim.opt.buftype = ""
+-- Lazy plugin manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -15,28 +15,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-	{
-  "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons",
-    "MunifTanjim/nui.nvim",
-	}
-},
-{
-'shaunsingh/nord.nvim',
-lazy = false,
-priority = 1000,
-config = function()
-	vim.g.nord_contrast = true
-	vim.g.nord_borders = false
-	vim.g.nord_disable_background = false
-	vim.g.nord_italic = false
-	vim.g.nord_uniform_diff_background = true
-	vim.g.nord_bold = false
-
-	require('nord').set()
-end
-}
-})
+    require 'plugins.colortheme',
+    require 'plugins.neotree',
+    require 'plugins.bufferline',
+    require 'plugins.lualine',
+    require 'plugins.treesitter',
+    require 'plugins.telescope',
+    require 'plugins.lsp'
+   })
