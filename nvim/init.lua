@@ -1,5 +1,4 @@
-require 'core.keymaps'
-require 'core.options'
+require 'core.keymaps' require 'core.options'
 
 vim.opt.number = true
 vim.opt.relativenumber = true
