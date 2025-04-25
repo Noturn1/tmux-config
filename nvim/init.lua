@@ -1,7 +1,7 @@
 require 'core.keymaps' 
 require 'core.options'
 
--- Clear global buftype 
+-- Clear global buftype
 vim.opt.buftype = ""
 -- Lazy plugin manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -11,7 +11,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   if vim.v.shell_error ~= 0 then
     error('Error cloning lazy.nvim:\n' .. out)
   end
-end 
+end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
@@ -21,5 +21,9 @@ require('lazy').setup({
     require 'plugins.lualine',
     require 'plugins.treesitter',
     require 'plugins.telescope',
-    require 'plugins.lsp'
+    require 'plugins.lsp',
+    require 'plugins.autocompletion',
+    require 'plugins.gitsigns',
+    require 'plugins.alpha',
+    require 'plugins.indent-blankline'
    })
