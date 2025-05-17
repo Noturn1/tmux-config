@@ -26,6 +26,7 @@ require('lazy').setup({
     require 'plugins.gitsigns',
     require 'plugins.alpha',
     require 'plugins.indent-blankline',
-    require 'plugins.misc'
+    require 'plugins.misc',
+ -- require 'plugins.linting'
    })
 
